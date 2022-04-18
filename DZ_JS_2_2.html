@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение ДЗ JS 2_2</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        /*
+        2. Чему будут равны переменные x и a в примере ниже? 
+        Написать почему так произошло (описать последовательность действий).
+        */
+
+        // В переменную а записывается 2
+        let a = 2;
+
+        // Выводим в консоль а = 2
+        console.log(a);
+
+        /*
+        1. Сначала сработает оператор присваивания с умножением, сооответсвенно а = 2 * 2;
+        2. Затем х = 1 + 4;
+        */
+        let x = 1 + (a *= 2);
+
+        // Выводим в консоль а = 4
+        console.log(a);
+
+        // Выводим в консоль х = 5
+        console.log(x)
+    </script>
+    
+</body>
+</html>

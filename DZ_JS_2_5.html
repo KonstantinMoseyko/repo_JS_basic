@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение ДЗ JS 2_5</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        /*
+        5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение.
+        */
+        function sum(a, b) {
+          return a + b;
+        }
+
+        function diff(a, b) {
+          return a - b;
+        }
+
+        function div(a, b) {
+          return a / b;
+        }
+
+        function mul(a, b) {
+          return a * b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+              case "sum":
+                 return console.log(sum(arg1, arg2)); 
+              case "difference":
+                 return console.log(diff(arg1, arg2));
+              case "division":
+                 return console.log(div(arg1, arg2));
+              case "multiplication":
+                 return console.log(mul(arg1, arg2));
+              default:
+                console.log("Sorry, we are out of " + operation + ".");
+            }
+        }
+        mathOperation(5, 4, "sum");
+        mathOperation(5, 4, "difference");
+        mathOperation(5, 4, "division");
+        mathOperation(5, 4, "multiplication");
+        mathOperation(5, 4, "xxx");
+    </script>
+    
+</body>
+</html>
