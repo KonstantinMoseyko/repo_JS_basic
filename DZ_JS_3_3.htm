@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение ДЗ JS 3_3</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        // 3. Перед вами находится массив с продуктами, 
+        // сегодня распродажа и вам нужно на каждый товар применить скидку 15%, 
+        // можете использовать метод forEach
+        const products = [ 
+            { id: 3, 
+              price: 200, 
+            }, 
+            { id: 4, 
+              price: 900, 
+            }, 
+            { id: 1, 
+              price: 1000, 
+            }, 
+        ];
+
+        function discount_15(product) {
+            product.price = product.price * 0.85;
+            console.log(product.price);
+        }
+
+        products.forEach(discount_15);
+    </script>
+    
+</body>
+</html>
